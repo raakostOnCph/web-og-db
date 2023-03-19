@@ -9,6 +9,11 @@ public class Person
     private String kode;
     private  Set<String> stringSet;
 
+
+    public Person()
+    {
+    }
+
     // denne her er til når jeg opretter en ny bruger
     public Person(String navn, String kode, Set<String> stringSet)
     {
@@ -64,5 +69,11 @@ public class Person
     public void setStringSet(Set<String> stringSet)
     {
         this.stringSet = stringSet;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Person{" + "personId=" + personId + ", navn='" + navn + '\'' + ", kode='" + kode + '\'' + ", stringSet=" + stringSet + '}';
     }
 }

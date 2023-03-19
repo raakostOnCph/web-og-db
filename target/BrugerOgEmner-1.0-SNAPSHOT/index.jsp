@@ -10,6 +10,32 @@
 <br/>
 
 
+<h1> Her kan du logge ind som eksisterende bruger</h1>
+
+   ${requestScope.msg }
+
+
+<form action="ServletLogin">
+    <label >Angiv bruger id:</label><br>
+    <input type="text"  name="navn" value="Valborg"><br>
+    <label>angiv kode:</label><br>
+    <input type="text"  name="kode" value="1234"><br><br>
+    <input type="submit" value="login">
+</form>
+
+
+
+
+<h1> her kan du oprettet dig</h1>
+
+<form action="ServletOpret">
+    <label >Skriv navn:</label><br>
+    <input type="text"  name="navn" value="Valborg"><br>
+    <label>angiv kode:</label><br>
+    <input type="text"  name="kode" value="1234"><br><br>
+    <input type="submit" value="Opret">
+</form>
+
 
 </body>
 </html>
